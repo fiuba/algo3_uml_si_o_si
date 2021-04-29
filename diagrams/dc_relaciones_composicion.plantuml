@@ -1,0 +1,18 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Escuela {
+        - nombre
+
+        + inscribir(estudiante)
+}
+
+class Estudiante {
+        - dni
+        
+        + rinde(materia)
+}
+
+Escuela "1" o-- "*" Estudiante
+
+@enduml

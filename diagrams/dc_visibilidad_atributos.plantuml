@@ -1,0 +1,13 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Nombre {
+        - atributoPrivado : ClaseX
+        + atributoPublico : ClaseY
+        # atributoProtegido : ClaseY
+
+        + metodoA() : ClaseY
+        + metodoB(param : ClaseZ) : void
+}
+
+@enduml

@@ -1,0 +1,19 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+Vehiculo ..> Nafta
+
+
+class EcuacionCuadratica {
+        - coeficientes
+
+        + resolver()
+}
+
+class Math {
+        + pow(double a, double b) : float
+        + sqrt(double a)
+}
+EcuacionCuadratica ..> Math
+
+@enduml

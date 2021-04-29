@@ -1,0 +1,21 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Figura {
+        + area()
+}
+
+class Cuadrado {
+        - lado 
+        + area()
+}
+
+class Circulo {
+        - radio 
+        + area()
+}
+
+Figura <|-- Cuadrado
+Figura <|-- Circulo
+
+@enduml

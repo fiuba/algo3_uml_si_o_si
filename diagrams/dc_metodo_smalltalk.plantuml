@@ -1,0 +1,13 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class OrderedCollection {
+        - array
+        - firstIndex
+        - lastIndex
+
+        + add(newObject)
+        + addBeforeIndex(newObject, index)
+}
+
+@enduml

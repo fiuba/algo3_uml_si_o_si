@@ -1,0 +1,19 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Empresa {
+        - razonSocial
+
+        + liquidarIVA()
+}
+
+class Venta {
+        - fecha
+        - producto : Producto
+        
+        + precio()
+}
+
+Empresa "1" -> "*" Venta
+
+@enduml

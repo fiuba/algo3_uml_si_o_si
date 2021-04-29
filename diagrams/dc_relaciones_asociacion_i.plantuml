@@ -1,0 +1,19 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Monstruo {
+        - vida : Vida
+
+        + huir()
+        + atacar(monstruo : Monstruo)
+}
+class Arma {
+        - potencia
+        
+        + disparar()
+}
+
+
+Monstruo -> Arma
+
+@enduml
